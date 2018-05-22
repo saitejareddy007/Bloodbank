@@ -24,7 +24,7 @@
 		<div class="Name" ><h1 style="color:white; top:10px;">Blood Bank</h1></div>
 		<div class="logoutbtn">
 			<form action="logout.php" method="post">
-				<button type="submit">Logout</button>
+				<button type="submit" style="padding: 30px;"><b>Logout</b></button>
 			</form>
 		</div>
 	</div>
