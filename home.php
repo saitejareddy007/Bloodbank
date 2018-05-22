@@ -20,7 +20,7 @@
 
     th {text-align: center;}
 </style>
-	<div id="top">
+	<div id="top" style="margin-top: 0;">
 		<div class="img" ><img src="logo.jpg" height="40px"></div>
 		<div class="Name" ><h1 style="color:white; top:10px;">Blood Bank</h1></div>
 		<div class="logoutbtn">

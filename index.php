@@ -1,8 +1,10 @@
 <?php
-    session_start();
+	include('login.php');
+	session_start();
 	if(isset($_SESSION['username'])){
-		header('location: /Bloodbank/home.php');
+		include 'home.php';
 	}
+	else{
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +20,7 @@
 	</div>
 	<div id="bottom">
 		<div id="right_login" >
-			<div>
+			<div id="loginForm">
 				<form name="loginForm" action="login.php" method="post" onsubmit="return validateform()">
 					<table>
 						<tr>
@@ -44,8 +46,12 @@
 			</div>	
 		</div>
 		<div id="left">
-			<img src="Image.jpg" height="40%" width="80%" style="border-radius:5px;">
+			<img src="Image.jpg" height="100%" width="80%" style="border-radius:5px;">
 		</div>
 	</div>
+	
 </body>
 </html>
+<?php
+}
+?>

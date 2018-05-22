@@ -11,7 +11,7 @@
 		
 		if($_POST['password']==$row['password']){
 	        $_SESSION['username'] = $username;
-			header('Location: /Bloodbank/home.php');
+			header('Location: /Bloodbank');
 		}
 		else{
 			?>			
