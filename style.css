@@ -1,4 +1,4 @@
-body{
+	body{
 		margin: 0px;
 		padding: 0px;
 		width:100%;
@@ -152,6 +152,7 @@ body{
 		line-height:20px;
 		background-color:white;
 		width:200px;
+		outline: none;
 	}
 	input:hover{
 		border-color:#1b95e0;
