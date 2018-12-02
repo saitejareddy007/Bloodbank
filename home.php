@@ -20,7 +20,7 @@
     th {text-align: center;}
 </style>
 	<div id="top" style="margin-top: 0;">
-		<div class="img" ><img src="logo.jpg" height="40px"></div>
+		<div class="img" ><img src="logo.jpeg" height="40px"></div>
 		<div class="Name" ><h1 style="color:white; top:10px;">Blood Bank</h1></div>
 		<div class="logoutbtn">
 			<form action="logout.php" method="post">
@@ -31,7 +31,7 @@
 	<div id="home">
 		<h1 >Welcome <?php echo $_SESSION['username']; ?></h1>
 		<button onclick="fun()" >Search for donor</button>
-		
+	
 		<div id="donorSearch" style="visibility: hidden;">
 			Blood Group:<select name="bloodGroup" onchange="showUser(this.value)">
 							<option value="" >Select</option>
