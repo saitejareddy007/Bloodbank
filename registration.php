@@ -22,7 +22,7 @@
 ?>            
             <script>
     alert('you account has been created successfully');
-    window.location="/Bloodbank/"
+    window.location="./"
 </script>
 <?php
             
@@ -32,7 +32,7 @@
 ?>
 <script>
     alert('The username you have choosen is not available');
-    window.location="/Bloodbank/createAccount.html"
+    window.location="./createAccount.html"
 </script>
 <?php
     }

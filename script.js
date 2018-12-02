@@ -16,19 +16,28 @@ function validateform(){
 function newaccountvalidateform(){
     var name=document.form.username.value;
     var password=document.form.password.value;
+    var repassword = document.form.repassword.value;
     var fullName=document.form.fullName.value;
     var age=document.form.age.value;
     var bloodGroup=document.form.bloodGroup.value;
     var mobileNumber=document.form.mobileNumber.value;
     
-    if((name==null || name=="") && (password==null || password=="") && (age==null || age=="") &&(mobileNumber==null || mobileNumber=="")&&(bloodGroup=="") ){
+    if((name==null || name=="") || (password==null || password=="") || (age==null || age=="") || (mobileNumber==null || mobileNumber=="") || (bloodGroup=="") ){
         alert("please fill all required fields");
         return false;
     } 
     else if(password.length<6){  
   		alert("Password must be at least 6 characters long.");  
   		return false;  
-  	} 
+  	}
+    else if(password!=repassword){
+      alert("Password mis-matched");
+      return false;
+    }
+    else if(mobileNumber >1000000000 || mobileNumber < 9999999999){
+      alert("invalid phone number, phone number must be only 10 digits");  
+      return false;
+    }
 } 
 function fun(){
 			var donorSearch = document.getElementById("donorSearch");
