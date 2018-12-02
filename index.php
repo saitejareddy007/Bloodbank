@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div id="top">
-		<div class="img" ><img src="logo.jpg" height="40px"></div>
+		<div class="img" ><img src="logo.jpeg" height="40px"></div>
 		<div class="Name" ><h1 style="color:white; top:10px;">Blood Bank</h1></div>
 	</div>
 	<div id="bottom">

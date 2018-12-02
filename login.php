@@ -12,13 +12,13 @@
 			
 			if($_POST['password']==$row['password']){
 		        $_SESSION['username'] = $username;
-				header('Location: /Bloodbank');
+				header('Location: ./');
 			}
 			else{
 				?>			
 	<script>
 				alert("Entered email or password is incorrect");
-				window.location="/Bloodbank";
+				window.location="./";
 	</script>
 				<?php
 			}	
